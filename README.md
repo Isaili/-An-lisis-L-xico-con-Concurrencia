@@ -61,6 +61,11 @@ git clone https://github.com/tu_usuario/proyecto_lexer.git](https://github.com/I
 ```bash
 python main.py
 ```
+
+### 2⃣  🔹 Ejecutar el Analizador CON INTERFAZ GRAFICA
+```bash
+python gui.py
+```
 salida esperada:
 ```bash
 Ejecutando análisis con multiprocessing...
