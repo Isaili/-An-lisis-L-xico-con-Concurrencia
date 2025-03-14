@@ -53,13 +53,39 @@ LSO/
 
 ### 1⃣  Clonar el repositorio
 ```bash
-git clone https://github.com/tu_usuario/proyecto_lexer.git
-cd proyecto_lexer
+git clone https://github.com/tu_usuario/proyecto_lexer.git](https://github.com/Isaili/-An-lisis-L-xico-con-Concurrencia.git
 
 ```
 
-### 2⃣  Ejecutar la aplicación
+### 2⃣  🔹 Ejecutar el Analizador
 ```bash
 python main.py
 ```
+salida esperada:
+```bash
+Ejecutando análisis con multiprocessing...
+📂 Contenido leído (input/file1.txt): 'int x = 10;'
+📝 Tokens generados: [('KEYWORD', 'int'), ('IDENTIFIER', 'x'), ('OPERATOR', '='), ('NUMBER', '10'), ('DELIMITER', ';')]
+
+Ejecutando análisis con asyncio...
+Tokens asyncio: [['...'], ['...']]
+```
 ---
+
+## 🧨 5. Ejemplo de Entrada y Salida
+🔹 Entrada (input/file1.txt)
+```bash
+int x = 10;
+if (x > 5) {
+    x = x + 1;
+}
+
+```
+🔹 Salida esperada
+```bash
+[('KEYWORD', 'int'), ('IDENTIFIER', 'x'), ('OPERATOR', '='), ('NUMBER', '10'), ('DELIMITER', ';'),
+ ('KEYWORD', 'if'), ('DELIMITER', '('), ('IDENTIFIER', 'x'), ('COMPARISON', '>'), ('NUMBER', '5'), ('DELIMITER', ')'),
+ ('DELIMITER', '{'), ('IDENTIFIER', 'x'), ('OPERATOR', '='), ('IDENTIFIER', 'x'), ('OPERATOR', '+'), ('NUMBER', '1'), ('DELIMITER', ';'),
+ ('DELIMITER', '}')]
+
+```
