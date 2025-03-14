@@ -11,7 +11,7 @@ El sistema sigue una arquitectura modular con los siguientes componentes:
 - 🎊**pMultiprocessing:y**: Divide la carga entre múltiples procesos para mejorar el rendimiento en archivos grandes.
 - 🎍**Asyncio:**: Ejecuta tareas en paralelo de manera asíncrona, ideal para archivos pequeños.
 
-## 🗂️ Estructura del Proyecto
+## 🗂️ 2. Estructura del Proyecto
 
 ```bash
 LSO/
@@ -31,5 +31,35 @@ LSO/
   ├── 🗍 main   
   ├── 🗍 README.md    # Documentación
  
+```
+---
+
+#### 📌 3. Estrategia de Concurrencia
+1. **multiprocessing**:
+  - Se usa multiprocessing.Pool() para ejecutar el análisis en múltiples archivos simultáneamente.
+  - Ideal para grandes volúmenes de texto o múltiples archivos grandes
+
+2. **Asyncio:**:
+  - Se usa asyncio.to_thread() para ejecutar el análisis en paralelo sin bloquear el proceso principal.
+  - Funciona mejor en escenarios donde hay múltiples archivos pequeños.
+  
+---
+
+## 🚀 4. Instalación y Ejecución
+
+**🔹 Requisitos**
+- Python 3.x
+- Librerías estándar de Python (re, asyncio, multiprocessing, os)
+
+### 1⃣  Clonar el repositorio
+```bash
+git clone https://github.com/tu_usuario/proyecto_lexer.git
+cd proyecto_lexer
+
+```
+
+### 2⃣  Ejecutar la aplicación
+```bash
+python main.py
 ```
 ---
