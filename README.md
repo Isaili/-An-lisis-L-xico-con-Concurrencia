@@ -21,14 +21,14 @@ LSO/
  ├── 📁 .src
     ├── 📁 __pycache__   # cache de los archivos
     ├── 🗍 __init__.py   
-    ├── 🗍 asyncio_lexer.py    # Scripts de fuentes y consumos
-    ├── 🗍 gui.py    # Scripts de fuentes y consumos        
-    ├── 🗍 lexer.py    # Scripts de fuentes y consumos
-    ├── 🗍 multiprocessing_lexer.py    # Scripts de fuentes y consumos
-    ├── 🗍 utils.py   # Scripts de fuentes y consumos
+    ├── 🗍 asyncio_lexer.py    # Versión con asyncio
+    ├── 🗍 gui.py    # Interfaz con Tkinter       
+    ├── 🗍 lexer.py    # Analizador Léxico
+    ├── 🗍 multiprocessing_lexer.py    # Versión con multiprocessing
+    ├── 🗍 utils.py   # Funciones auxiliares
   ├── 📁 test
-    ├── 🗍 test_lexer.py
-  ├── 🗍 main   
+    ├── 🗍 test_lexer.py #Pruebas unitarias
+  ├── 🗍 main   #Punto de entrada
   ├── 🗍 README.md    # Documentación
  
 ```
